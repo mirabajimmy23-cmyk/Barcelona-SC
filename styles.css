@@ -1,0 +1,222 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111827;           /* oscuro */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f9fafb;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  color: #facc15;                /* amarillo BSC */
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu li a:hover,
+.menu li a.activo,
+.activo {
+  color: #facc15;
+}
+
+/* Botón modo oscuro */
+#btn-dark {
+  background: #facc15;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  padding-top: 90px; /* espacio por nav fija */
+  text-align: center;
+  background: #e5e7eb;
+  padding-bottom: 40px;
+}
+
+.header-bsc {
+  background: linear-gradient(135deg, #facc15, #111827);
+  color: #111827;
+}
+
+.header-bsc h1,
+.header-bsc p {
+  color: #111827;
+}
+
+/* Contenido */
+.contenido {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.contenido h2 {
+  color: #111827;
+}
+
+.proximo-partido {
+  margin-top: 20px;
+  background: #fff7cc;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #facc15;
+}
+
+.proximo-partido .nota {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 20px;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: transform .3s;
+}
+
+.card p {
+  margin: 0;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Formulario */
+.contacto {
+  background: white;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contacto h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #facc15;
+  border-color: #facc15;
+}
+
+.btn {
+  padding: 10px;
+  background: #111827;
+  color: #facc15;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #000000;
+}
+
+/* Mensaje OK */
+.ok {
+  color: green;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 0.85rem;
+}
+
+/* Modo oscuro general */
+.dark {
+  background: #020617;
+  color: #f9fafb;
+}
+
+.dark .nav {
+  background: #000000;
+}
+
+.dark .contacto,
+.dark .contenido,
+.dark .galeria .card {
+  background: #0b1120;
+  color: #f9fafb;
+}
+
+.dark footer {
+  background: #000000;
+}

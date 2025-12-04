@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronósticos Deportivos - Barcelona S.C.</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navegación fija -->
+  <nav class="nav">
+    <h2 class="logo">Pronósticos BSC</h2>
+    <ul class="menu">
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li><a href="acerca.html">Acerca</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <!-- Botón modo oscuro -->
+    <button id="btn-dark">🌙</button>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="header header-bsc">
+    <h1>Pronósticos Deportivos Barcelona S.C.</h1>
+    <p>
+      Análisis, feeling amarillo y pronósticos de los próximos partidos del Ídolo del Astillero.
+    </p>
+  </header>
+
+  <!-- Sección principal -->
+  <section class="contenido">
+    <article>
+      <h2>¿De qué trata este sitio?</h2>
+      <p>
+        Este mini sitio está dedicado a los pronósticos deportivos, con un enfoque especial
+        en Barcelona Sporting Club. Aquí se mezclan datos, rachas recientes y la pasión
+        de la hinchada para anticipar posibles resultados de los próximos encuentros.
+      </p>
+      <p>
+        No es una casa de apuestas, sino un espacio informativo y recreativo para practicar
+        desarrollo web (HTML, CSS y JavaScript) mientras hablamos del equipo más popular del Ecuador.
+      </p>
+    </article>
+
+    <article class="proximo-partido">
+      <h2>Próximo partido destacado</h2>
+      <p><strong>Barcelona S.C. vs. Libertad FC</strong></p>
+      <ul>
+        <li>Estadio: Estadio Federativo Reina del Cisne</li>
+        <li>Torneo: Liga Pro</li>
+        <li>Pronóstico tendencia: Victoria de Barcelona S.C.</li>
+      </ul>
+      <p class="nota">
+        *Este pronóstico es solo referencial y se usa con fines académicos y recreativos.
+      </p>
+    </article>
+  </section>
+
+  <!-- Formulario de contacto / pronóstico -->
+  <section id="contacto" class="contacto">
+    <h2>Envíanos tu pronóstico</h2>
+    <p>
+      Completa el formulario y comparte tu pronóstico del próximo partido de Barcelona S.C.
+    </p>
+
+    <form id="formulario">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" required placeholder="Tu nombre">
+
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" required placeholder="tucorreo@ejemplo.com">
+
+      <label for="mensaje">Tu pronóstico</label>
+      <textarea id="mensaje" rows="4" required placeholder="Ej: Barcelona 2 - 0 Rival, goles al segundo tiempo..."></textarea>
+
+      <button type="submit" class="btn">Enviar pronóstico</button>
+      <p id="msg-ok" class="ok hidden">¡Pronóstico enviado! Gracias por apoyar al Ídolo 💛🖤</p>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 - Pronósticos Deportivos Barcelona S.C. - Sitio académico.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
